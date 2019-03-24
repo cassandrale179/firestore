@@ -1,14 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <!-- <img src="./assets/logo.png"> -->
+    <!-- <router-view/> -->
   </div>
 </template>
 
 <script>
-import Form from 'components/form';
-// import Intro from '../components/intro'; 
-// import OneSlide from '../components/one-slide';  
+
+// import OneSlide from ''
+// import Form from '../src/components/form'; 
+
+import Form from '../src/components/form';
+import Intro from '../src/components/intro'; 
+// import OneSlide from '../src/components/one-slide';  
 // import Logo from '../../assets/logo.png';
 
 

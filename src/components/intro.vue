@@ -12,19 +12,19 @@
         
           <!-- Instructions example (4 slide in total ) -->
           <div v-if="page <= 1" class="example">
-              <img src="../../assets/d1.png" /> 
+              <img src="../assets/d1.png" /> 
               <u>Example 1 (blue = big):</u> There are <b> 4 triangles </b> and <b> 6 circles </b> in this picture. Press <b>c</b> 
           </div>
           <div v-if="page === 2" class="example">
-              <img src="../../assets/d2.png" /> 
+              <img src="../assets/d2.png" /> 
               <u>Example 2 (blue = big):</u> There are <b> 8 triangles </b> and <b> 2 circles </b> in this picture. Press <b>t</b> 
           </div>
           <div v-if="page === 3" class="example">
-              <img src="../../assets/d3.png" /> 
+              <img src="../assets/d3.png" /> 
               <u>Example 3 (green = small):</u> There are <b> 4 triangles </b> and <b> 6 circles </b> in this picture. Press <b>c</b> 
           </div>
           <div v-if="page === 4" class="example">
-              <img src="../../assets/d4.png" /> 
+              <img src="../assets/d4.png" /> 
               <u>Example 4 (green = small):</u> There are <b> 8 triangles </b> and <b> 2 circles </b> in this picture. Press <b>t</b> 
           </div> <br>
 

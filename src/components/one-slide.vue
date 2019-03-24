@@ -30,7 +30,6 @@
     // Import the circle and triangle components here 
     import BigCircle from './bigcircle';  
     import BigTriangle from './bigtriangle'; 
-    import CircleImage from '../../assets/circle.png'; 
 
     
     // This contained attributes for small shape and big shape 
@@ -196,7 +195,6 @@
       data() {
           return {
               correctKey: '', 
-              CircleImage,
               ComponentData: {},  
               ObjectData: {}, 
           }
