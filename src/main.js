@@ -2,28 +2,37 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
+import BalmUI from 'balm-ui'; // Mandatory 
 
 // Importing Firebase relating stuff 
-
-
-// import VueFire from 'vuefire'
 import firebase from 'firebase'
 import VueFire from 'vuefire' 
-Vue.use(VueFire)
 
-// Vue.config.productionTip = false
+// Balm UI related libraries 
+import 'balm-ui/components/core.css';
+import 'balm-ui/components/button.css';
+import 'balm-ui/components/textfield.css';
+import 'balm-ui/components/icon.css'; 
+import 'balm-ui/components/grid.css';
+
+
+// Vue explicit declaration 
+Vue.use(VueFire); 
+Vue.use(BalmUI);  
+
+// Add Firebase binding here 
 firebase.initializeApp({
   projectId: 'hystersis-69801',
   databaseURL: 'https://hystersis-69801.firebaseio.com'
 })
 
-// var usersRef = firebase.database().ref('users') 
-
-/* eslint-disable no-new */
+// Create Vue app 
 new Vue({
   el: '#app',
-  router,
   components: { App },
   template: '<App/>'
 })
+
+
+
+// Vue.config.productionTip = false 

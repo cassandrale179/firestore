@@ -11,6 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "balm-ui": "^1.0.2",
     "firebase": "^5.9.1",
     "vue": "^2.5.2",
     "vuefire": "^1.4.5"

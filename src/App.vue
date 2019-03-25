@@ -8,10 +8,10 @@
           </div> 
       
           <!-- Star the experiment if count < 0, which means user finished reading the instruction slide -->
-          <!-- <div v-if="count <= 0" class="experiment">
+          <div v-if="count <= 0" class="experiment">
             {{moveSlides ('blue') }}
             <OneSlide :oneSlideProp= "oneSlideData"></OneSlide> 
-          </div> -->
+          </div>
         </div> 
 
   </div>
