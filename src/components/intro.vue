@@ -55,8 +55,14 @@
 <script>
 
 import OneSlide from './one-slide';   
+import {db} from '../main.js';  
 
+console.log(db); 
 
+// var userRef = db.ref("users");
+// userRef.on('value', (snapshot) => {
+//   console.log("snapshot", snapshot); 
+// }) 
 
 // Export the app here 
 export default {
@@ -93,7 +99,7 @@ export default {
     }
   }, 
 
-  
+
 };
 </script>
 
@@ -101,6 +107,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only  --> 
 <style scoped>
+
+
+
+
+ @import url('https://fonts.googleapis.com/css?family=Lato|Merriweather|Roboto|Roboto+Slab');
   .body{
     position: absolute;
     top: 50%;
@@ -111,6 +122,8 @@ export default {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
     border-radius: 5px; 
+    font-family: 'Merriweather', sans-serif; 
+    font-size: 15px; 
   }
 
 

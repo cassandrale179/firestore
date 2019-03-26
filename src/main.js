@@ -20,11 +20,30 @@ import 'balm-ui/components/grid.css';
 Vue.use(VueFire); 
 Vue.use(BalmUI);  
 
-// Add Firebase binding here 
-firebase.initializeApp({
-  projectId: 'hystersis-69801',
-  databaseURL: 'https://hystersis-69801.firebaseio.com'
-})
+
+
+
+// Initialize Firebase
+var app = firebase.initializeApp({
+  apiKey: "AIzaSyBU35MoFKhbTRTwOwxYOwnjDg9N6j4WMBg",
+  authDomain: "hystersis-69801.firebaseapp.com",
+  databaseURL: "https://hystersis-69801.firebaseio.com",
+  projectId: "hystersis-69801",
+  storageBucket: "hystersis-69801.appspot.com",
+  messagingSenderId: "456383164809"
+});
+export const db = app.database(); 
+window.dbProp = db; 
+
+
+// Get user data from here 
+var userRef = db.ref("users");
+userRef.once('value').then(snapshot => {
+  console.log("snapshot", snapshot.val()); 
+}); 
+
+
+
 
 // Create Vue app 
 new Vue({

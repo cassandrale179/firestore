@@ -145,9 +145,6 @@
                     this.ComponentData = bigShape; 
                     this.ObjectData = smallShape; 
 
-                    
-
-
 
                 } else if (currentblock == 'small') {
 

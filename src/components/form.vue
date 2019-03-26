@@ -4,6 +4,13 @@
 <template >
   <div class="body">
     <h1>Cognitive Flexibility Task</h1>
+
+    <!-- <div>
+      <li v-for="userName of users"
+       >
+        {{userName}}
+      </li>
+    </div> -->
     <section> <ui-textfield placeholder="Experiment Name" fullwidth> </ui-textfield></section>
     <section> <ui-textfield placeholder="Full Name" fullwidth> </ui-textfield></section>
     <section> 
@@ -22,12 +29,23 @@
 
 
 <script>
+
+
+console.log("db fuckkk", window.dbProp); 
+
+
 // Export the app here 
 export default {
   name: 'form',
+
+
+
+
   data() {
+    
   
-  }
+  }, 
+
 };
 </script>
 
